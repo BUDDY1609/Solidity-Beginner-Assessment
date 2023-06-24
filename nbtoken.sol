@@ -14,19 +14,19 @@ contract nbtoken {
  
     // mint function
 
-    function mintToken(address _address, uint _value) public {
+    function mint(address _address, uint _amount) public {
 
-        totalSupply += _value;
-        balances[_address] += _value;
+        totalSupply += _amount;
+        balances[_address] += _amount;
     }
 
     // burn function
 
-    function burnToken(address _address, uint _value) public{
+    function burn(address _address, uint _amount) public{
 
-        if (balances[_address] >= _value){
-            totalSupply -= _value;
-            balances[_address] -= _value;
+        if (balances[_address] >= _amount){
+            totalSupply -= _amount;
+            balances[_address] -= _amount;
         }
         
     }
