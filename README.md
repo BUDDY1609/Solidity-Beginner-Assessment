@@ -11,10 +11,10 @@ The code can track of the total supply of coins, mint and burn tokens.
 \
 Public variables that store information about the coin. These variables are the following: `tokenName`, `tokenAbbrv`, and `totalSupply`. A public mapping variable named `balances` to map addresses to balances. The address is of the `address` data type, and the balance is of `uint` data type, or unsigned integer.
 Unsigned integers are integers that cannot have a negative value.
-There are three functions, `mint`, `burn`, and `balance`. 
+There are three functions, `mintToken`, `burnToken`, and `balance`. 
 mint and burn functions take two arguments, an address and a value and balance function take one arguments only address.
-The `mint` function increases the balance of the address by the value given, and increases the total supply.
-The `burn` function is the opposite: it decreases the balance of the address by the value given, and decreases the total supply.
+The `mintToken` function increases the balance of the address by the value given, and increases the total supply.
+The `burnToken` function is the opposite: it decreases the balance of the address by the value given, and decreases the total supply.
 
 ## Getting Started
 
@@ -28,7 +28,7 @@ The `burn` function is the opposite: it decreases the balance of the address by 
 
 - Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the `nbtoken` contract from the dropdown menu, then click the "Deploy" button.
 
-- Now at the left bottom side of the page, there is a section called "Deployed Contracts". below that, as you can see contract is deployed and by clicking into NBTOKEN there are functions like burn, mint which will burn and mint coin respectively after that balances button will give a balance of the address that you put into the text field on the right side of the button. further, 3 more buttons will provide the token name, its abbreviation and total supply.
+- Now at the left bottom side of the page, there is a section called "Deployed Contracts". below that, as you can see contract is deployed and by clicking into NBTOKEN there are functions like burnToken, mintToken which will burn and mint coin respectively after that balances button will give a balance of the address that you put into the text field on the right side of the button. further, 3 more buttons will provide the token name, its abbreviation and total supply.
 
 Thank you.
 
